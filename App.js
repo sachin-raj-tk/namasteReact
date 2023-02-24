@@ -1,0 +1,5 @@
+    const heading = React.createElement("h1",{},"Namaste React using React")
+    const heading2 = React.createElement("h1",{},"Namaste React using React testing 2")
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(heading)
+    root.render(heading2)
