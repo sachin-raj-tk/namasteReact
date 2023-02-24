@@ -10,8 +10,13 @@
     <h1>Header</h1>
     <div id="root">Not rendered</div>
     <h2>footer</h2>
+
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+ <!-- This code below was used before shifting the code to App.js file, this is the way Akshay saini did it initally -->
+ <!-- root.render(heading2) in below code is to show that react will overWrite what was initally in the root -->
+ 
 <!-- <script>
     const heading = React.createElement("h1",{},"Namaste React using React")
     const heading2 = React.createElement("h1",{},"Namaste React using React testing 2")
@@ -19,6 +24,10 @@
     root.render(heading)
     root.render(heading2)
 </script> -->
+
+
+<!-- After adding the javascript to app.js file, below script is used -->
 <script src="App.js"></script>
+
 </body>
 </html>
