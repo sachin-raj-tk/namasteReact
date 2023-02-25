@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="root"><h1>Hei</h1></div>
-    <div id="rootOne"></div>
-    <script>
-        let heading = document.createElement("h1");
-        let heading1 = document.createElement("h1");
-        heading.innerHTML = "Nameste react"
-        heading1.innerHTML = "Nameste reactOne"
-        const root = document.getElementById("root");
-        const rootOne = document.getElementById("rootOne");
-        
+    <h1>Header</h1>
+    <div id="root">Not rendered</div>
+    <h2>footer</h2>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-        root.appendChild(heading)
-        // root.textContent = "hello"
-        rootOne.appendChild(heading1)
-        console.log(root);
-        // document.body.appendChild(heading)
-    </script>
+ <!-- This code below was used before shifting the code to App.js file, this is the way Akshay saini did it initally -->
+ <!-- root.render(heading2) in below code is to show that react will overWrite what was initally in the root -->
+ 
+<!-- <script>
+    const heading = React.createElement("h1",{},"Namaste React using React")
+    const heading2 = React.createElement("h1",{},"Namaste React using React testing 2")
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(heading)
+    root.render(heading2)
+</script> -->
+
+
+<!-- After adding the javascript to app.js file, below script is used -->
+<script src="App.js"></script>
+
 </body>
 </html>
